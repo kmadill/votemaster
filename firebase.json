@@ -1,0 +1,9 @@
+{
+  "firebase": "votingappkm",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

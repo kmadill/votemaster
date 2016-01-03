@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.11.0/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>VoteMaster</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa fa-bar-chart"></i> VoteMaster</a>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Sign in</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="panel panel-default" style="margin-left:auto; margin-right:auto;">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <p class="text-center"><i class="fa fa-bar-chart logo"></i></p>
+                            </div>
+                            <div class="col-xs-4">
+                                <h1>VoteMaster</h1>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" value="">
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-primary" type="button" id="loginButton"><i class="fa fa-sign-in"></i> Login</button>
+                            <a href="register.html">Register / Sign up</a>
+                        </p>
+
+                        <hr>
+                        <p class="text-center">Or, login with your Github or Google accounts.
+                            <br>
+                            <br>
+                            <button class="btn btn-social btn-github" type="button" id="githubLoginButton"><span class="fa fa-github"></span> Sign in with Github</button>
+                            <button class="btn btn-social btn-google" type="button" id="googleLoginButton"><span class="fa fa-google"></span> Sign in with Google</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="text-center">
+                            <span id="messages"><div class="alert alert-info" role="alert">Log in above!</div></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+</body>
+</html>

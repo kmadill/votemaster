@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Voting App</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa fa-bar-chart"></i> VoteMaster</a>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <p class="navbar-text navbar-right"><span id="navbarLoggedIn"></span></p>
+                </li>
+                <li>
+                    <span id = "navbarLogoutButton"></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <ol id="pollBreadcrump" class="breadcrumb initiallyHidden">
+                    <li><a href="main.html">My Polls</a></li>
+                    <li class="active">Poll</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container initiallyHidden" id="panelVote">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <button class="btn btn-danger btn-circle-sm" id="btnCancelVote"><i class="fa fa-ban"></i></button>
+                        <span class="bigtitle">Cast Your Vote!</span>
+                    </div>
+                    <div class="panel-body">
+                       <h5><b>Poll Options<b></h5>
+                        <span id = "votePollOptions"></span>
+                        <p class="text-center">
+                            <button class="btn btn-primary initiallyHidden" type="button" id="btnVoteAddOption"><i class="fa fa-plus"></i> Add another option</button><br><br>
+                            <button class="btn btn-default btn-lg" type="button" id="btnSaveVote"><i class="fa fa-floppy-o"></i> Vote</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+                <div class="col-md-8">
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <button class="btn btn-primary btn-circle-sm" id="btnAddVote"><i class="fa fa-pencil-square-o"></i></button><span class="bigtitle"> Poll</span>
+                        <span id="shareButton"></span>
+                        <button class="btn btn-info btn-circle-sm emailicon initiallyHidden" id="btnSharePoll"><i class="fa fa-envelope-o"></i></button>
+                    </div>
+                    <div class="panel-body">
+                        <h5 id="pollContent"></h5>
+                        <canvas id="myBarChart" width="600" height="400"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+</body>
+</html>
